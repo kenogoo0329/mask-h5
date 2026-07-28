@@ -11,7 +11,7 @@ export const pages = [
   {
     id: 'wechat-services',
     name: '微信服务',
-    description: '微信服务页面上侧还原',
+    description: '微信服务页面还原',
     component: WeChatServices,
   },
 ]

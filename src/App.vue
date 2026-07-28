@@ -14,7 +14,7 @@ const currentPage = computed(() =>
     <!-- 页面预览列表 -->
     <div v-if="!currentPageId" class="preview-list">
       <div class="preview-list__header">
-        <h1 class="preview-list__title">页面预览</h1>
+        <h1 class="preview-list__title">mask</h1>
         <p class="preview-list__subtitle">点击卡片查看页面</p>
       </div>
 
