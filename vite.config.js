@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/mask-h5/',
   server: {
     allowedHosts: true,
     host: true,
@@ -23,8 +24,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/',
-        start_url: '/',
+        scope: '/mask-h5/',
+        start_url: '/mask-h5/',
         icons: [
           {
             src: 'pwa-assets/pwa-192x192.png',
