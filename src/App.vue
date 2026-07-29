@@ -13,11 +13,6 @@ const currentPage = computed(() =>
   <div class="app">
     <!-- 页面预览列表 -->
     <div v-if="!currentPageId" class="preview-list">
-      <div class="preview-list__header">
-        <h1 class="preview-list__title">mask</h1>
-        <p class="preview-list__subtitle">点击卡片查看页面</p>
-      </div>
-
       <div v-if="pages.length" class="preview-list__grid">
         <div
           v-for="page in pages"
@@ -76,25 +71,9 @@ const currentPage = computed(() =>
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: env(safe-area-inset-top, 0px) 16px env(safe-area-inset-bottom, 0px);
+  justify-content: flex-start;
+  padding: 0 16px env(safe-area-inset-bottom, 0px);
   gap: 24px;
-}
-
-.preview-list__header {
-  text-align: center;
-}
-
-.preview-list__title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-
-.preview-list__subtitle {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .preview-list__grid {
@@ -103,6 +82,7 @@ const currentPage = computed(() =>
   gap: 16px;
   width: 100%;
   max-width: 400px;
+  margin-top: 16px;
 }
 
 @media (min-width: 480px) {
