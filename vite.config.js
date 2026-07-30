@@ -20,7 +20,7 @@ export default defineConfig({
         name: 'H5 PWA App',
         short_name: 'H5 App',
         description: '一个纯前端 H5 PWA 应用示例',
-        theme_color: '#42b883',
+        theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
