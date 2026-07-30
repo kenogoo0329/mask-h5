@@ -93,33 +93,34 @@ const currentPage = computed(() =>
 }
 
 .preview-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: #ffffff;
   border-radius: 16px;
   padding: 20px;
   cursor: pointer;
   transition: background 0.2s ease;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .preview-card:active {
-  background: rgba(255, 255, 255, 0.14);
+  background: #f5f5f5;
 }
 
 .preview-card__name {
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
+  color: #1a1a1a;
   margin-bottom: 4px;
 }
 
 .preview-card__desc {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .preview-list__empty {
   text-align: center;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 16px;
   line-height: 1.6;
 }
