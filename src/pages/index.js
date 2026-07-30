@@ -7,11 +7,13 @@ export const pages = [
     name: 'Hello World',
     description: '基础示例页面',
     component: HelloWorld,
+    themeColor: '#ffffff',
   },
   {
     id: 'wechat-services',
     name: '微信服务',
     description: '微信服务页面还原',
     component: WeChatServices,
+    themeColor: '#ededed',
   },
 ]

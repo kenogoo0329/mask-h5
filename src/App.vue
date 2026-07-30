@@ -1,11 +1,32 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { pages } from './pages/index.js'
 
 const currentPageId = ref(null)
 
 const currentPage = computed(() =>
   pages.find((p) => p.id === currentPageId.value)
+)
+
+const HOME_THEME_COLOR = '#ffffff'
+
+function setThemeColor(color) {
+  let meta = document.querySelector('meta[name="theme-color"]')
+  if (!meta) {
+    meta = document.createElement('meta')
+    meta.setAttribute('name', 'theme-color')
+    document.head.appendChild(meta)
+  }
+  meta.setAttribute('content', color)
+}
+
+watch(
+  currentPageId,
+  (id) => {
+    const page = pages.find((p) => p.id === id)
+    setThemeColor(page?.themeColor || HOME_THEME_COLOR)
+  },
+  { immediate: true }
 )
 </script>
 
