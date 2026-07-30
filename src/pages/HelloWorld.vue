@@ -19,7 +19,7 @@
 .hello__title {
   font-size: 32px;
   font-weight: 600;
-  color: #ffffff;
+  color: #1a1a1a;
   letter-spacing: 0.5px;
 }
 </style>
